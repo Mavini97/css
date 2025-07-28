@@ -1,2 +1,1 @@
-# css
-css
+Me desculpem o atraso, fiquei muito agarrado trabalhando nessa semana e para mim foi muito difícil pegar o conteúdo com pouco tempo, entendo a não consideração da tarefa, porém não podia deixar de entregar. Infelizmente não consegui fazer tudo o que eu queria!
