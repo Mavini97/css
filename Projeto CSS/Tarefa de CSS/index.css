@@ -1,0 +1,461 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Alata, sans-serif;
+  }
+
+  h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+  
+  body {
+    background-color: #fafafa;
+  }
+  
+  /* ========== HEADER ========== */
+  header {
+    width: 1440px;
+    height: 109px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #e8ecf2;
+    background-color: #9800f0;
+  }
+  
+  header nav{
+    display: flex;
+    gap: 20px;
+  }
+
+  header nav a{
+    text-decoration: none;
+    color: black;
+  }
+
+  header nav a:hover {
+    font-size: 1.2rem; /* ou outro valor maior que o original */
+    transition: font-size 0.3s ease;
+    color: #e57e17cf;
+  }
+
+  
+  /* ========== APRESENTAÇÃO ========== */
+  .apresentacao {
+    width: 1440px;
+    height: 318px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    padding: 0 80px;
+    opacity: 0.9;
+    border-radius: 0px 0px 8px 8px; 
+  }
+  
+  .foto img {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+    .foto img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        color:rgba(144, 138, 138, 0.347);
+        filter: brightness(70%);
+    }
+  .sobre {
+    width: 614px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* ========== LISTAS ========== */
+
+  .grupo-1,
+.grupo-2,
+.grupo-3,
+.grupo-4{
+  display: contents; /* preserva o layout original */
+}
+
+  .listas {
+    width: 1440px;
+    height: 289px;
+    margin: 0 auto;
+    display: flex;
+    gap: 26px;
+    padding: 20px 112px; 
+    background-color: #9800f0;
+    border-radius: 8px; /* arredondamento apenas na parte superior */
+
+  }
+
+  .Hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 595px;
+    height: 249px;
+    padding: 20px;
+  }
+  .Hobbies ul{
+    flex-direction:row-reverse ;
+  }
+
+  .Hobbies h2{
+    text-align: right;
+  }
+  
+.jogos {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 595px;
+    height: 249px;
+    padding: 20px;
+  }
+  li {
+    width: 103px;
+    height: 150px;
+    background-color: #dfdfdf;
+    border-radius: 8px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
+    word-break: break-word;
+    font-size: 16px;
+  }
+
+ li:hover {
+    font-size: 1.2rem; /* ou outro valor maior que o original */
+    transition: font-size 0.3s ease;
+    color: #000000cf;
+  }
+  
+  ul, ol {
+    width: 556px;
+    height: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  ol {
+    counter-reset: item;
+  }
+  
+  ol li {
+    position: relative;
+  }
+  
+  ol li:nth-child(-n+3)::before {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 20px;
+    height: 44px;
+    background-color: #c4c4c4;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 6px 6px;
+  }
+  
+  
+  /* ========== FEEDBACK ========== */
+  .container {
+   display: flex;;
+    height: 366px;
+    padding: 76px 136px 54px 136px;
+  }
+  form {
+    width: 1168px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+
+  }
+  
+  form h2 {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+.preencher {
+    height: 56px; 
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+  }
+
+  form textarea {
+    width: 1128px;
+    line-height: 56px; 
+    padding: 0 12px;
+    resize: none;
+  }
+  
+  form input {
+    width: 1128px;
+    height: 56px;
+    padding: 0 12px;
+  }
+  form textarea::placeholder,
+  form input::placeholder {
+    color: black;
+    font-size: 16px;
+  }
+  
+  form button {
+    width: 127px;
+    height: 39px;
+    margin-right: 28px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+ footer {
+background-color: #9800f0;
+width: 1440px;
+height: 70px;
+padding: 16px 32px;
+ }
+
+ footer nav {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .icones{
+    width: 188px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+ }
+ .icones a {
+    text-decoration: none;
+ }
+
+ .contato {
+    width: 162px;
+    height: 38px;
+    background-color: #e5e5e5;
+    border-radius: 6px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+  }
+  
+  
+
+  /*- ========== MEDIA QUERIES ========== */        
+
+
+ /* === Versão Mobile (até 480px) === */
+@media (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Alata, sans-serif;
+      }
+    header {
+      width: 428px;
+      flex-direction: row;
+      padding: 16px;
+      height: 109px;
+      text-align: center;
+      gap: 12px;
+    }
+  
+    .apresentacao {
+      flex-direction: column;
+      width: 431px;
+      height: auto;
+      padding: 32px 13.75px;
+      gap: 33px;
+    }
+  
+    .foto img {
+      width: 247px;
+      height: 247px;
+    }
+
+    .sobre {
+        width: 403.5px;
+        height: auto;
+        gap: 67.61px;
+    }
+  
+    .listas {
+      flex-direction: column;
+      align-items: center;
+      width: 431px;
+      padding: 20px 0 20px;
+      gap: 32px;
+      height: 890px;
+    }
+  
+    .Hobbies {
+      width: 100%;
+      height: 425px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .grupo-1 {
+        width: 388px;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grupo-1 li {
+        width: 103px;
+        height: 150px;
+
+    }
+
+    .grupo-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+    }
+    .grupo-2 li {
+        width: 103px;
+        height: 150px;
+
+    }
+
+
+    .jogos {
+        width: 100%;
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+
+    .grupo-3 {
+        width: 389px;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grupo-3 li {
+        width: 103px;
+        height: 150px;
+
+    }
+
+
+    .grupo-4 {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .grupo-4 li {
+        width: 103px;
+        height: 150px;
+
+    }
+  
+    ul, ol {
+    gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    li {
+      width: 100px;
+      height: 120px;
+    }
+  
+    .container {
+      padding: 32px 16px;
+      height: auto;
+    }
+
+    form {
+        width: 384px;
+        height: 236px;
+    }
+  
+   form textarea, form input {
+      width: 100%;
+    }
+  
+    form button {
+      align-self: center;
+     width: 79.08px;
+     height: 37px;
+    }
+  
+    footer {
+      width: 427px;
+      height: 127px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      background-color: #C4C4C4;
+    }
+  
+    footer nav {
+      flex-direction: column-reverse;
+      gap: 26px;
+      align-items: center;
+    }
+  
+    .icones {
+     display: flex;
+     width: 188px;
+     height: 32px;
+     justify-content: space-between;
+    }
+  
+    .contato {
+      width: 162px;
+      height: 38px;
+    }
+  }
+ 

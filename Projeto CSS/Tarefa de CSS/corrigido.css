@@ -1,0 +1,221 @@
+/* ========== RESET GERAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Alata, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+/* ========== HEADER ========== */
+header {
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e8ecf2;
+  background-color: #c4c4c4;
+  gap: 12px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ========== APRESENTAÇÃO ========== */
+.apresentacao {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px;
+  background-color: #f3f3f3;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.foto img {
+  width: 247px;
+  height: 247px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sobre {
+  max-width: 614px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ========== LISTAS ========== */
+.listas {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobbies,
+.jogos {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 595px;
+  align-items: center;
+}
+
+.grupo-1,
+.grupo-2,
+.grupo-3,
+.grupo-4 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  width: 103px;
+  height: 150px;
+  background-color: #dfdfdf;
+  border-radius: 8px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 16px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* ========== FORMULÁRIO ========== */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 600px;
+}
+
+form label {
+  font-size: 16px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #c4c4c4;
+  text-align: center;
+}
+
+/* ========== MEDIA QUERY ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .sobre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .listas {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .grupo-1,
+  .grupo-2,
+  .grupo-3,
+  .grupo-4 {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+} 
